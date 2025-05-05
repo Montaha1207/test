@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nos Cours</title>
+  <link rel="stylesheet" href="cours.css">
+</head>
+<body>
+  <div class="sidebar">
+    <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+    <div>
+        <img src="logo.png" alt="logo" class="logo">
+    </div>
+    
+    <div class="menu">
+        <div class="menu-item">
+            <a href="home2.html">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                </svg>
+                Home
+            </a>
+        </div>
+        <div class="menu-item active">
+            <a href="cours.html">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                </svg>
+                My Courses
+            </a>
+        </div>
+        <div class="menu-item">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+            </svg>
+            Favorite
+        </div>
+        <div class="menu-item">
+          <a href="teacher.html">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+            </svg>
+            Teacher
+          </a>
+        </div>
+        <div class="menu-item">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+            </svg>
+            prices
+        </div>
+        <div class="menu-item">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+            </svg>
+            Certificate
+        </div>
+        <div class="menu-item">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            Register
+        </div>
+    </div>
+</div>
+</div>
+  <div class="container">
+    <h1 id="h">Our Courses </h1>
+    
+    <div class="courses-grid">
+      <!-- Web dev -->
+      <div class="course-card">
+        <div class="course-image">
+          <img src="webdev.png" alt="Web Development">
+        </div>
+        <div class="course-content">
+          <h2>Web & Mobile  Development</h2>
+          <p>Teaches how to build websites using HTML, CSS, JavaScript, and frameworks like React or Vue.js for front-end, and Node.js, Django, or Flask for back-end development.</p>
+          <a href="#" class="btn-primary">En savoir plus</a>
+        </div>
+      </div>
+      
+      <!-- Carte cybersecurity-->
+      <div class="course-card">
+        <div class="course-image">
+          <img src="cyber.jpg" alt="Cybersecurity and Ethical Hacking">
+        </div>
+        <div class="course-content">
+          <h2>Cybersecurity and Ethical Hacking</h2>
+          <p>Covers encryption, network security, penetration testing, and ethical hacking techniques. It helps learners understand vulnerabilities and how to secure systems.</p>
+          <a href="#" class="btn-primary">En savoir plus</a>
+        </div>
+      </div>
+      
+      <!-- Carte introduction to computer science -->
+      <div class="course-card">
+        <div class="course-image">
+          <img src="cs.jpg" alt="Introduction to Computer Science">
+        </div>
+        <div class="course-content">
+          <h2>Introduction to Computer Science</h2>
+          <p>This foundational course covers basic programming concepts, problem-solving techniques, and an introduction to algorithms and data structures. It’s ideal for beginners who want to understand how computers work and how to write simple programs.</p>
+          <a href="#" class="btn-primary">En savoir plus</a>
+        </div>
+      </div>
+      
+      <!-- Carte computer networks-->
+      <div class="course-card">
+        <div class="course-image">
+          <img src="cn.webp" alt="Computer Networks">
+        </div>
+        <div class="course-content">
+          <h2>Computer Networks</h2>
+          <p>Explores the architecture, protocols, and technologies behind networking, including TCP/IP, DNS, HTTP, and cybersecurity concepts. It’s crucial for those interested in cloud computing and IT infrastructure.t</p>
+          <a href="#" class="btn-primary">En savoir plus</a>
+        </div>
+      </div>
+      
+      <!-- Carte database -->
+      <div class="course-card">
+        <div class="course-image">
+          <img src="dbs.jpg" alt="Database Management Systems">
+        </div>
+        <div class="course-content">
+          <h2>Database Management Systems (DBMS)</h2>
+          <p>Focuses on relational databases, SQL, normalization, and NoSQL databases like MongoDB. This course is essential for backend developers and data analysts.</p>
+          <a href="#" class="btn-primary">En savoir plus</a>
+        </div>
+      </div>
+      
+      <!-- Nouvelle Carte Machine Learning -->
+      <div class="course-card">
+        <div class="course-image">
+          <img src="datascience.png"alt="Machine Learning">
+        </div>
+        <div class="course-content">
+          <h2>Machine Learning</h2>
+          <p>A Machine Learning (ML) course provides students with the foundational and advanced concepts of ML, covering algorithms, data processing, model evaluation, and real-world applications. It typically includes both theoretical knowledge and hands-on programming experience.</p>
+          <a href="#" class="btn-primary">En savoir plus</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="cours.js"></script>
+  <script src="home2.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learnify Registration Form</title>
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="registration.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1 class="h1">Learnify Registration Form</h1>
+        <input type="hidden" name="referrer" value="<?php echo $_SERVER['HTTP_REFERER'] ?? ''; ?>">
+        <form action="register.php" method="post">
+            <div class="form-section">
+                <h2>Personal Information</h2>
+                <div class="wave-group">
+                    <input required="" type="text" class="input" id="first-name" name="first_name">
+                    <span class="bar"></span>
+                    <label class="label">
+                        <span class="label-char" style="--index: 0">F</span>
+                        <span class="label-char" style="--index: 1">i</span>
+                        <span class="label-char" style="--index: 2">r</span>
+                        <span class="label-char" style="--index: 3">s</span>
+                        <span class="label-char" style="--index: 4">t</span>
+                        <span class="label-char" style="--index: 5"> </span>
+                        <span class="label-char" style="--index: 6">N</span>
+                        <span class="label-char" style="--index: 7">a</span>
+                        <span class="label-char" style="--index: 8">m</span>
+                        <span class="label-char" style="--index: 9">e</span>
+                    </label>
+                </div>
+                
+                <div class="wave-group">
+                    <input required="" type="text" class="input" id="last-name" name="last_name">
+                    <span class="bar"></span>
+                    <label class="label">
+                        <span class="label-char" style="--index: 0">L</span>
+                        <span class="label-char" style="--index: 1">a</span>
+                        <span class="label-char" style="--index: 2">s</span>
+                        <span class="label-char" style="--index: 3">t</span>
+                        <span class="label-char" style="--index: 4"> </span>
+                        <span class="label-char" style="--index: 5">N</span>
+                        <span class="label-char" style="--index: 6">a</span>
+                        <span class="label-char" style="--index: 7">m</span>
+                        <span class="label-char" style="--index: 8">e</span>
+                    </label>
+                </div>
+                
+                <div class="wave-group">
+                    <input required="" type="email" class="input" id="email" name="email">
+                    <span class="bar"></span>
+                    <label class="label">
+                        <span class="label-char" style="--index: 0">E</span>
+                        <span class="label-char" style="--index: 1">m</span>
+                        <span class="label-char" style="--index: 2">a</span>
+                        <span class="label-char" style="--index: 3">i</span>
+                        <span class="label-char" style="--index: 4">l</span>
+                    </label>
+                </div>
+                
+                <div class="wave-group">
+                    <input required="" type="password" class="input" id="password" name="password">
+                    <span class="bar"></span>
+                    <label class="label">
+                        <span class="label-char" style="--index: 0">P</span>
+                        <span class="label-char" style="--index: 1">a</span>
+                        <span class="label-char" style="--index: 2">s</span>
+                        <span class="label-char" style="--index: 3">s</span>
+                        <span class="label-char" style="--index: 4">w</span>
+                        <span class="label-char" style="--index: 5">o</span>
+                        <span class="label-char" style="--index: 6">r</span>
+                        <span class="label-char" style="--index: 7">d</span>
+                    </label>
+                </div>
+                
+                <div class="wave-group">
+                    <input required="" type="password" class="input" id="confirm-password" name="confirm_password">
+                    <span class="bar"></span>
+                    <label class="label">
+                        <span class="label-char" style="--index: 0">C</span>
+                        <span class="label-char" style="--index: 1">o</span>
+                        <span class="label-char" style="--index: 2">n</span>
+                        <span class="label-char" style="--index: 3">f</span>
+                        <span class="label-char" style="--index: 4">i</span>
+                        <span class="label-char" style="--index: 5">r</span>
+                        <span class="label-char" style="--index: 6">m</span>
+                        <span class="label-char" style="--index: 7"> </span>
+                        <span class="label-char" style="--index: 8">P</span>
+                        <span class="label-char" style="--index: 9">a</span>
+                        <span class="label-char" style="--index: 10">s</span>
+                        <span class="label-char" style="--index: 11">s</span>
+                        <span class="label-char" style="--index: 12">w</span>
+                        <span class="label-char" style="--index: 13">o</span>
+                        <span class="label-char" style="--index: 14">r</span>
+                        <span class="label-char" style="--index: 15">d</span>
+                    </label>
+                </div>
+            </div>
+            
+            
+            <div class="button-section">
+                <button type="submit" class="button">
+                        Register</button>
+            </div>
+            
+        </form>
+    </div>
+    <script src="registration.js"></script>
+</body>
+</html>

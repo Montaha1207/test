@@ -1,0 +1,341 @@
+/* Updated sidebar styling from home2.css while keeping other styles intact */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* Changed to Poppins from home2.css */
+}
+
+/* Google Fonts Import for Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Updated Sidebar Styles from home2.css */
+.sidebar {
+    width: 280px;
+    height: 100vh;
+    background: linear-gradient(135deg, #2193b0 0%, #6dd5ed 100%);
+    padding: 25px 20px;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+/* Logo Styles from home2.css */
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    height: 90px;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+}
+
+.logo h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: white; /* Updated color to match the sidebar */
+}
+
+.logo span {
+    color: #ffffff; /* Updated to match the white theme */
+    font-size: 32px;
+}
+
+/* Toggle Button from home2.css */
+.toggle-btn {
+    position: absolute;
+    right: -50px;
+    top: 20px;
+    background: linear-gradient(135deg, #2193b0 0%, #6dd5ed 100%);
+    color: white;
+    border: none;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 0 8px 8px 0;
+    font-size: 1.5rem;
+    box-shadow: 3px 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toggle-btn:hover {
+    background: linear-gradient(135deg, #176f87 0%, #5abace 100%);
+    transform: translateX(5px);
+}
+
+/* Menu Styles from home2.css */
+.menu {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    padding: 14px 18px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.menu-item:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    transition: all 0.4s ease;
+}
+
+.menu-item:hover:before {
+    left: 0;
+}
+
+.menu-item.active {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateX(5px);
+}
+
+.menu-item svg {
+    margin-right: 16px;
+    width: 22px;
+    height: 22px;
+    transition: transform 0.3s ease;
+}
+
+.menu-item:hover svg {
+    transform: scale(1.2);
+}
+
+/* Main content adjustment for sidebar width */
+.main-content {
+    flex: 1;
+    padding: 40px;
+    margin-left: 280px; /* Match sidebar width */
+    width: calc(100% - 280px);
+    transition: margin-left 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+/* Sidebar Hide/Show Functionality */
+.sidebar.hidden {
+    transform: translateX(-100%);
+}
+
+.main-content.expanded {
+    margin-left: 0;
+    width: 100%;
+}
+
+/* Animation for logo and menu items on load */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.logo, .menu-item {
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+.menu-item:nth-child(1) { animation-delay: 0.1s; }
+.menu-item:nth-child(2) { animation-delay: 0.2s; }
+.menu-item:nth-child(3) { animation-delay: 0.3s; }
+.menu-item:nth-child(4) { animation-delay: 0.4s; }
+.menu-item:nth-child(5) { animation-delay: 0.5s; }
+.menu-item:nth-child(6) { animation-delay: 0.6s; }
+.menu-item:nth-child(7) { animation-delay: 0.7s; }
+
+/* Scrollbar styling from home2.css */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #2193b0;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #176f87;
+}
+
+/* Responsive design for sidebar */
+@media screen and (max-width: 992px) {
+    .sidebar {
+        width: 250px;
+    }
+    .main-content {
+        margin-left: 250px;
+        width: calc(100% - 250px);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 70px;
+        padding: 20px 10px;
+    }
+    .sidebar .logo {
+        margin-bottom: 40px;
+    }
+    .menu-item {
+        justify-content: center;
+        padding: 15px 0;
+    }
+    .menu-item svg {
+        margin-right: 0;
+    }
+    .menu-item a {
+        display: none;
+    }
+    .main-content {
+        margin-left: 70px;
+        width: calc(100% - 70px);
+    }
+    .toggle-btn {
+        right: -40px;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Keep your original pricing card styles and other elements unchanged */
+.pricing-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.pricing-card {
+    flex: 1;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing-header {
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.basic .pricing-header {
+    background-color: #35aed6;
+}
+
+.standard .pricing-header {
+    background-color: #35aed6;
+}
+
+.premium .pricing-header {
+    background-color: #35aed6;
+}
+
+.pricing-price {
+    background-color: #f5f5f5;
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 30px;
+    color: #555;
+    font-weight: bold;
+}
+
+.pricing-features {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.feature {
+    padding: 15px 20px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+.feature.empty {
+    color: #ccc;
+}
+
+.select-plan {
+    margin: 20px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    font-size: 16px;
+}
+
+.basic .select-plan {
+    background-color: #35aed6;
+}
+
+.standard .select-plan {
+    background-color: #35aed6;
+}
+
+.premium .select-plan {
+    background-color: #35aed6;
+}
+
+.select-plan:hover {
+    opacity: 0.9;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+}

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learnify Website</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="icon" href="logo.png" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="nav_bar">
+        
+        <nav class="nav">
+            <div class="nav_links">
+            <ul class="navul">
+                <img src="logo.png" alt="logo" class="logo">
+
+                <li class="navulli"><a href="#learnify" class="naving">about</a></li>
+                <li class="navulli"><a href="#program" class="naving">program</a></li>
+                <li class="navulli"><a href="#courses" class="naving">courses</a></li>
+                <li class="navulli"><a href="#reviews" class="naving">Reviews</a></li>
+
+
+            </ul>
+        </div>
+
+        </nav>
+        
+    </div>
+
+    <div id="learnify" class="about">
+        <div>
+            <h1>Learnify</h1>
+            <p class="parag">Learnify is a platform that provides online courses for students. It is a one-stop solution for all your learning needs. We provide courses on various subjects like Mathematics, Science, History, etc. Our courses are designed by experts in the field and are available at an affordable price. So, what are you waiting for? Start learning with Learnify today!</p>
+            <button class="c-button c-button--gooey"  onclick="window.location.href='registration.html'">sign up
+                
+                <div class="c-button__blobs">
+                <div></div>
+                <div></div>
+                <div></div>
+                </div>
+            </button>
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display: block; height: 0; width: 0;">
+                <defs>
+                <filter id="goo">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo"></feColorMatrix>
+                    <feBlend in="SourceGraphic" in2="goo"></feBlend>
+                </filter>
+                </defs>
+            </svg>
+            </div>
+        <img src="Learning-bro.svg" alt="logo" class="main-logo">
+
+    </div>
+
+    <div id="program" class="program-section">
+        <h2>Our Learning Program</h2>
+        <div class="program-cards">
+            <div class="program-card">
+                <div class="program-icon">
+                    <img src="self-paced.svg" alt="Self-paced learning">
+                </div>
+                <h3>Self-Paced Learning</h3>
+                <p>Learn at your own pace with our flexible schedule. Access course materials anytime, anywhere.</p>
+            </div>
+            <div class="program-card">
+                <div class="program-icon">
+                    <img src="expert.svg" alt="Expert instructors">
+                </div>
+                <h3>Expert Instructors</h3>
+                <p>Learn from industry experts and experienced educators who are passionate about teaching.</p>
+            </div>
+            <div class="program-card">
+                <div class="program-icon">
+                    <img src="certificate.svg" alt="Certification">
+                </div>
+                <h3>Certification</h3>
+                <p>Earn a recognized certificate upon completion to showcase your new skills to employers.</p>
+            </div>
+            <div class="program-card">
+                <div class="program-icon">
+                    <img src="community.svg" alt="Community">
+                </div>
+                <h3>Community Support</h3>
+                <p>Join our community of learners to collaborate, share ideas, and get help when needed.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="courses" class="courses-section">
+        <h2>Popular Courses</h2>
+        <div class="course-container">
+            <div class="course-card">
+                <div class="course-img">
+                    <img src="webdev.png" alt="Web Development">
+                </div>
+                <div class="course-info">
+                    <h3>Web Development Bootcamp</h3>
+                    <div class="course-details">
+                        <span class="duration">12 weeks</span>
+                        <span class="rating">⭐⭐⭐⭐⭐ (4.8)</span>
+                    </div>
+                    <p>Learn HTML, CSS, JavaScript, React, and more. Build real-world websites and applications.</p>
+                    <button class="course-button">Enroll Now</button>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <div class="course-img">
+                    <img src="datascience.png" alt="Data Science">
+                </div>
+                <div class="course-info">
+                    <h3>Data Science Fundamentals</h3>
+                    <div class="course-details">
+                        <span class="duration">10 weeks</span>
+                        <span class="rating">⭐⭐⭐⭐⭐ (4.7)</span>
+                    </div>
+                    <p>Master Python, data analysis, machine learning, and visualization techniques.</p>
+                    <button class="course-button">Enroll Now</button>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <div class="course-img">
+                    <img src="digitalmarketing.png" alt="Digital Marketing">
+                </div>
+                <div class="course-info">
+                    <h3>Digital Marketing Mastery</h3>
+                    <div class="course-details">
+                        <span class="duration">8 weeks</span>
+                        <span class="rating">⭐⭐⭐⭐⭐ (4.6)</span>
+                    </div>
+                    <p>Learn SEO, social media marketing, content strategy, and PPC advertising.</p>
+                    <button class="course-button">Enroll Now</button>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <div class="course-img">
+                    <img src="uiux.jpg" alt="UI/UX Design">
+                </div>
+                <div class="course-info">
+                    <h3>UI/UX Design Principles</h3>
+                    <div class="course-details">
+                        <span class="duration">9 weeks</span>
+                        <span class="rating">⭐⭐⭐⭐⭐ (4.9)</span>
+                    </div>
+                    <p>Design user-friendly interfaces, create prototypes, and conduct usability testing.</p>
+                    <button class="course-button">Enroll Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="courses-cta">
+            <button class="c-button c-button--gooey">View All Courses
+                <div class="c-button__blobs">
+                <div></div>
+                <div></div>
+                <div></div>
+                </div>
+            </button>
+        </div>
+    </div>
+
+    <div id="reviews" class="reviews-section">
+        <h2>What Our Students Say</h2>
+        <div class="testimonial-container">
+            <div class="testimonial">
+                <div class="student-profile">
+                    <img src="student1.svg" alt="Student 1" class="student-img">
+                    <div class="student-info">
+                        <h4>Felix</h4>
+                        <p class="course-taken">Web Development Bootcamp</p>
+                        <div class="student-rating">⭐⭐⭐⭐⭐</div>
+                    </div>
+                </div>
+                <p class="testimonial-text">"Learnify transformed my career completely! I went from knowing almost nothing about coding to building full-stack applications in just 12 weeks. The instructors were incredibly supportive and the community helped me stay motivated."</p>
+            </div>
+
+            <div class="testimonial">
+                <div class="student-profile">
+                    <img src="student2.jfif" alt="Student 2" class="student-img">
+                    <div class="student-info">
+                        <h4>peter han</h4>
+                        <p class="course-taken">Data Science Fundamentals</p>
+                        <div class="student-rating">⭐⭐⭐⭐⭐</div>
+                    </div>
+                </div>
+                <p class="testimonial-text">"The Data Science course was exactly what I needed to transition into a new field. The curriculum was comprehensive and up-to-date with industry standards. I landed a job as a junior data analyst before even completing the course!"</p>
+            </div>
+
+            <div class="testimonial">
+                <div class="student-profile">
+                    <img src="student3.jfif" alt="Student 3" class="student-img">
+                    <div class="student-info">
+                        <h4>bang chan</h4>
+                        <p class="course-taken">Digital Marketing Mastery</p>
+                        <div class="student-rating">⭐⭐⭐⭐</div>
+                    </div>
+                </div>
+                <p class="testimonial-text">"I've tried several online platforms before, but Learnify stands out with its practical approach. The digital marketing course taught me actionable strategies that I implemented immediately in my business, resulting in a 40% increase in online engagement."</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="logo.png" alt="Learnify Logo" class="footer-logo-img">
+                <p>Learn. Grow. Succeed.</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#learnify">About</a></li>
+                        <li><a href="#program">Program</a></li>
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Connect With Us</h4>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">FB</a>
+                        <a href="#" class="social-icon">TW</a>
+                        <a href="#" class="social-icon">IG</a>
+                        <a href="#" class="social-icon">LI</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Learnify. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="scripthome.js"></script>
+
+</body>
+</html>
